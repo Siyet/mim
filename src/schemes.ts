@@ -63,7 +63,7 @@ export interface ICompanyScheme extends IBaseScheme {
   /** Округ */
   adm_area: IForeignObject<IBaseScheme>
   /** Район */
-  rayon: IForeignObject<IBaseScheme>
+  district: IForeignObject<IBaseScheme>
   /** Адрес */
   address?: String
   /** Должность руководителя */
