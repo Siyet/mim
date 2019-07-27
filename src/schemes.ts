@@ -103,6 +103,7 @@ export interface ILiftStatScheme extends IBaseScheme {
   floor: Number
   is_empty: Boolean
   error: String
+  geo: [String, String]
 }
 
 /** 
@@ -126,4 +127,28 @@ export interface ILiftScheme extends IBaseScheme {
   mechanic_phone: String
   /** Тип */
   type: "ukl" | "uel" | "otis"
+  /** Агрегаты */
+  max_floor: Number
+  height: Number
+}
+
+export interface IUnitsScheme extends IBaseScheme {
+  /** Связь с лифтом */
+  parent: IForeignObject<ILiftScheme>
+  /** Тип агрегата */
+  type: "engine" | "cage" | "sensors" | "other"
+  /** Текущий агрегат */
+  is_current: Boolean
+  /** Дата установки */
+  install_at: Date
+  /** Расчетная дата замены */
+  replacement_at: Date
+  /** Количество выполненных шагов (открытие дверей, закрытие дверей, движение вверх/вниз) */
+  steps: Number
+}
+
+export interface IRSLUScheme { // reducing the service life of the unit
+  parent: IForeignObject<IUnitsScheme>
+  code: any
+  period_time: 
 }
