@@ -114,7 +114,7 @@ export interface IForeignObject<IBaseScheme> {
   title: String
 }
 
-/** СХЕМА ЛФИТА */
+/** СХЕМА ЛИФТА */
 export interface ILiftScheme extends IBaseScheme {
   /** Ссылка на управляющую компанию */
   parent: IForeignObject<ICompanyScheme>
