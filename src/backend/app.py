@@ -11,7 +11,7 @@ r = requests.get('https://google.com/')
 print('start')
 
 url = 'http://95.214.63.201:5984/_session'
-r = requests.post(url, data={'name': 'admin', 'password': 'Pf[fh42Fkrfi!'})
+r = requests.post(url, data={'name': 'admin', 'password': 'secret'})
 cook = r.headers['Set-Cookie']
 cook = cook.split(';')[0]
 header ={'Cookie': cook}
