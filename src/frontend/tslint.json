@@ -1,0 +1,65 @@
+{
+  "defaultSeverity": "error",
+  "extends": [
+    "tslint:latest"
+  ],
+  "jsRules": {
+  },
+  "rules": {
+    "member-access": false,
+    "ordered-imports": [
+      true,
+      {
+        "import-sources-order": "any",
+        "named-imports-order": "case-insensitive"
+      }
+    ],
+    "max-line-length": [
+      true,
+      140
+    ],
+    "curly": [
+      true,
+      "ignore-same-line"
+    ],
+    "indent": [
+      true,
+      "spaces",
+      2
+    ],
+    "object-literal-sort-keys": false,
+    "no-console": false,
+    "no-irregular-whitespace": true,
+    "no-string-literal": false,
+    "no-submodule-imports": false,
+    "no-implicit-dependencies": false,
+    "no-unused-variable": [
+      true,
+      {
+        "ignore-pattern": "^_"
+      }
+    ],
+    "quotemark": [
+      true,
+      "single",
+      "jsx-double"
+    ],
+    "variable-name": [
+      true,
+      "ban-keywords",
+      "check-format",
+      "allow-leading-underscore",
+      "allow-pascal-case"
+    ],
+    "semicolon": true,
+    "jsx-no-lambda": false
+  },
+  "rulesDirectory": [
+  ],
+  "linterOptions": {
+    "exclude": [
+      "config/**/*.js",
+      "node_modules/**/*.ts"
+    ]
+  }
+}

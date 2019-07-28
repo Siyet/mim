@@ -1,0 +1,3 @@
+export {
+  YandexMap,
+} from './YandexMap';

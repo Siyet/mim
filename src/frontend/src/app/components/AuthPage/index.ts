@@ -1,0 +1,3 @@
+export {
+  AuthFormWrapper,
+} from './AuthPage';

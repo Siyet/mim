@@ -1,0 +1,35 @@
+@import '../../../assets/less/variables.less';
+
+.search {
+  top: 0;
+  left: 120px;
+  padding: 20px 20px 20px 0;
+  z-index: 100;
+  position: absolute;
+
+  &-field {
+    width: 520px;
+    height: 60px;
+    padding: 19px 60px;
+    border-radius: 30px;
+    box-shadow: 0px 0px 4px #D8DCFF;
+
+    &::placeholder {
+      color: #C9C9C9;
+    }
+
+    &-wrapper {
+      position: relative;
+      width: 520px;
+      height: 60px;
+    }
+  }
+
+  &-icon {
+    position: absolute;
+    left: 25px;
+    top: -5px;
+    font-size: 21px;
+    color: #C9C9C9;
+  }
+}

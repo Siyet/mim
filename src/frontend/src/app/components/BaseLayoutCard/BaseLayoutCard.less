@@ -1,0 +1,63 @@
+@import '../../../assets/less/variables.less';
+
+.base {
+  &-card {
+    width: 450px;
+    height: 100%;
+    border-radius: 30px;
+    background-color: #fff;
+
+    &-wrapper {
+      width: 490px;
+      padding: 20px;
+      height: 100vh;
+    }
+
+    &-image {
+      position: relative;
+      width: 100%;
+      height: 330px;
+      border-top-right-radius: 30px;
+      border-top-left-radius: 30px;
+      background-color: #fafafa;
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
+      background-image: url('../../../assets/images/elevator.png');
+
+      &-status {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+
+        &.success {
+          background-color: #BDF1B0;
+        }
+
+        &.warning {
+          background-color: #FF9C27;
+        }
+
+        &.error {
+          background-color: #FF5D5D;
+        }
+      }
+    }
+
+    &-info {
+      padding: 25px 20px;
+      font-size: 24px;
+
+      & p {
+        margin-bottom: 15px;
+      }
+
+      &-title {
+        font-weight: 500;
+      }
+    }
+  }
+}
