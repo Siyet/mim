@@ -1,5 +1,5 @@
 # mim
-Mood in mute на Цифровом прорыве
+__Mood in mute__ на Цифровом прорыве
 ## Цифровой прорыв
 
 [Описание конкурса](https://xn--b1aaqfxbbhefb3bya5f.xn--p1ai/#about)
