@@ -149,6 +149,6 @@ export interface IUnitsScheme extends IBaseScheme {
 
 export interface IRSLUScheme { // reducing the service life of the unit
   parent: IForeignObject<IUnitsScheme>
-  code: any
-  period_time: 
+  code: String
+  period_time: Number
 }
