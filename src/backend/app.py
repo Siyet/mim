@@ -14,14 +14,14 @@ url = 'http://95.214.63.201:5984/_session'
 r = requests.post(url, data={'name': 'admin', 'password': 'secret'})
 cook = r.headers['Set-Cookie']
 cook = cook.split(';')[0]
-header ={'Cookie': cook}
+header = {'Cookie': cook}
+
 
 @app.route('/', methods=['GET'])
 def apipage():
     try:
 
 	uid = request.args.get('u')
-        time = request.args.get('t')
         status = request.args.get('s')
 	error = request.args.get('e', default='null')
 	milliseconds = 0
@@ -34,12 +34,7 @@ def apipage():
 	parentid = js['_id']
 	parentrev = js['_rev']
 
-        if len(time) == 13:
-            milliseconds = int(time[-3:])
-        time = float(time[0:-3])
-
-        the_date = datetime.datetime.fromtimestamp(time)
-        the_date += datetime.timedelta(milliseconds=milliseconds)
+  the_date = datetime.datetime.now()
  	
 	status = str(status)
 	floor = 1+int(status[0:5], 2)
