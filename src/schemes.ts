@@ -63,7 +63,7 @@ export interface ICompanyScheme extends IBaseScheme {
   /** Округ */
   adm_area: IForeignObject<IBaseScheme>
   /** Район */
-  rayon: IForeignObject<IBaseScheme>
+  district: IForeignObject<IBaseScheme>
   /** Адрес */
   address?: String
   /** Должность руководителя */
@@ -77,9 +77,9 @@ export interface ICompanyScheme extends IBaseScheme {
   /** График работы */
   worktime?: {
     /** День недели */
-    day: String
+    DayOfWeek: String
     /** Часы */
-    hours: String
+    Hours: String
   }
   homes_quantity: Number
   /** ИНН */
