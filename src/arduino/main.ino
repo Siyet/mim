@@ -10,6 +10,9 @@ void setup() {
   Serial.println("Start!");
 }
 
+
+
+
 void loop() {
   if ((!start_timestamp || old_status != _status) && !SIM800.available() && _step == 0){
     SIM800.println("AT+CIPSTART=\"TCP\",\"95.214.63.201\"," + (String)(start_timestamp ? "5000" : "3000"));

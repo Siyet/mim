@@ -1,3 +1,11 @@
+"""
+AT+CIPSTART="TCP","95.214.63.201",5000
+AT+CIPSEND
+GET /?u=9040ae5ec3cd4dc30e21f5393c0014bf&s=00011000&e=105
+Host: 95.214.63.201
+
+"""
+
 from flask import Flask
 from flask import request
 from flask import abort
